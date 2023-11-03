@@ -1,8 +1,9 @@
 //Toogle active hamburger menu
 const navbarNav = document.querySelector(".navbar-nav");
 
-document.querySelector("#hamburger-menu").onclick = () => {
+document.querySelector("#hamburger-menu").onclick = (e) => {
   navbarNav.classList.toggle("active");
+  e.preventDefault();
 };
 
 //Toogle active search menu
